@@ -40,21 +40,3 @@ function food(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   Assignment Submission # 2 //
-
-

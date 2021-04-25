@@ -79,13 +79,13 @@ document.write(333333+67867867)
 
 
 function my_first_function(){  // declared the program name 
-        var str = "this text is green"; // created a string
+        var str = ("this text is green"); // created a string
         var result = str.fontcolor("green"); // declared that when the button is clicked its to create the string in green!
         document.getElementById("green_text").innerHTML = result; // telling the html page to collect info from the is (id) 
 }
 
 function second_program(){
-        var str ="and succeeded"
+        var str = ("and succeeded")
         var result = str.fontcolor ("red");
         document.getElementById("second_program").innerHTML = result;
 }
@@ -104,16 +104,30 @@ function fourth_try(){
 
 
 function fifth_try(){
-        var str ="hi ya";
+        var str =("hi ya");
         result = str.fontcolor("green")
         document.getElementById("fifth_try").innerHTML = result;
 }
 
+function seventh_try(){
+        var str = (" every day we try a little bit more ")
+        result = str.fontcolor("blue")
+        document.getElementById("seventh_try").innerHTML = result;
+}
 
 
+function eighth_try(){
+                var eighth_try = document.createElement("IMG");
+        eighth_try.setAttribute("src", "Capture.PNG");
+                eighth_try.setAttribute("width", "500");
+                eighth_try.setAttribute("height", "500");
+                eighth_try.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(eighth_try);
+              }
 
 function display_date(){
         document.getElementById("date").innerHTML = Date();
+
 } 
 
 
