@@ -114,11 +114,11 @@ function submission_3(){
     a--;
     document.getElementById("submission").innerHTML = "123 + 2546 -53 *9 is :" + a;
 }
-function submission_4(){
+function submission_3_1(){
     a = 10;
     b = 20;
     a % b;
-    document.getElementById("submission4").innerHTML = " 10 % 20 is " + a,b;
+    document.getElementById("submission3_1").innerHTML = " 10% 20 is " + a,b;
 }
 
 
