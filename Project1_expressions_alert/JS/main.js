@@ -112,7 +112,9 @@ function fifth_try(){
 
 
 
-
+function display_date(){
+        document.getElementById("date").innerHTML = Date();
+} 
 
 
 
