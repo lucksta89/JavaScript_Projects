@@ -118,9 +118,9 @@ function seventh_try(){
 
 function eighth_try(){
                 var eighth_try = document.createElement("IMG");
-        eighth_try.setAttribute("src", "Capture.PNG");
-                eighth_try.setAttribute("width", "500");
-                eighth_try.setAttribute("height", "500");
+                eighth_try.setAttribute("src", "diff.PNG");
+                eighth_try.setAttribute("width", "300");
+                eighth_try.setAttribute("height", "300");
                 eighth_try.setAttribute("alt", "The Pulpit Rock");
                 document.body.appendChild(eighth_try);
               }
@@ -155,6 +155,16 @@ document.write(67456+26732357)
 //Assignment Submission # 1//
 
 
+
+
+
+team1 = "arsenal"
+team2 = "westham"
+team3 = "man u"
+team4 = "man city"
+
+
+        document.write(team1) + (team2)
 
 
 
