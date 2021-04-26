@@ -127,5 +127,3 @@ function submission_3_1(){
 // Assignment Submission # 3 //
 // Assignment Submission # 3 //
 
-
-
