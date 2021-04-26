@@ -43,3 +43,4 @@ function student(){
     };
     document.getElementById("student").innerHTML = "dan is " + dan.age;
 }
+
