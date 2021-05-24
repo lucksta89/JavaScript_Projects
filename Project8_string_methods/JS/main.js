@@ -119,6 +119,13 @@ function precition_1() {
 }// i am choosing how many number after the decimal to display
 
 
+/////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
 
 
