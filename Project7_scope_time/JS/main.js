@@ -10,7 +10,7 @@ function get_date() {
 
 
 function state() {
-if( a = (20 > 10) ? "hello" : " goodbye");
+if (a = (20 > 10) ? "hello" : " goodbye");
 document.getElementById("state").innerHTML = a;
 }
 
@@ -19,9 +19,9 @@ document.getElementById("state").innerHTML = a;
 
 
 function age_function() {
-    age = document.getElementById("age").value;
+    var age = document.getElementById("age").value;
     if (age >= 18){
-        vote = "your old enough to vote";
+        var vote = "your old enough to vote";
     }
     else{
         vote = "your not old enough to vote"
@@ -33,9 +33,9 @@ function age_function() {
 
 
 function alcohol() {
-    drink = document.getElementById("your_age").value;
+    var drink = document.getElementById("your_age").value;
     if(drink >= 18){
-        drinking = "your old enough to buy alcohol";
+        var drinking = "your old enough to buy alcohol";
     }
     else{
         drinking = "your not old enough to buy alcohol"
@@ -73,7 +73,7 @@ function time_function() {
 
 
 // Assign a global variable
-a = " hello my name is" + " Dan "  //assigned a string to a variable and concatenate it
+var a = " hello my name is" + " Dan "  //assigned a string to a variable and concatenate it
 a = a.fontcolor("blue")             // added color
 a = a.fontsize("20em")              // added font size
 document.write(a)
@@ -82,7 +82,7 @@ document.write(a)
 
 // and a local variable
 function local() {
-    a = "hello my name is " + "Dan ";  //assigned a string to a variable and concatenate it
+  var a = "hello my name is " + "Dan ";  //assigned a string to a variable and concatenate it
     a = a.fontcolor("red")          // added color
     document.getElementById("local").innerHTML = a;
 }
@@ -92,9 +92,9 @@ function local() {
 
 // Write a function that includes an if statement
 function numbers() {            
-b = document.getElementById("number").value;    // assigned the value of the input to var b
+var b = document.getElementById("number").value;    // assigned the value of the input to var b
 if (b <= 100){                            // if b is 100 or less show the string
-reply = "pick a higher number";
+ var reply = "pick a higher number";
 }
 else if(b > 100){                        // if b is 101 or more show the string
     reply = " pick a smaller number";
@@ -107,14 +107,14 @@ document.getElementById("number_result").innerHTML = reply
 
 // Intentionally write a function with an error in it and use the console.log() method to debug it within the console in the Chrome Dev Tools
 function error() {
-    user = "Here is a list of users! <br>";     
-    user_1 = " dan <br>";
-    user_2 = " matt <br>";
-    user_3 = " john ";
+    var user = "Here is a list of users! <br>";     
+    var user_1 = " dan <br>";
+    var user_2 = " matt <br>";
+    var user_3 = " john ";
    
     console.log("error"); 
     // error to fix i would use consol log and check the error in this case im missing the "
-    all = user + user_1 + user_2 + user_3;
+    var all = user + user_1 + user_2 + user_3;
     all = all.fontcolor("green");
     document.getElementById("users").innerHTML = all;
 }
