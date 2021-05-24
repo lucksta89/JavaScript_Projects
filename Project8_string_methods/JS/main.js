@@ -1,35 +1,35 @@
 // course version with concat()
 function concat() {
-    part1 = "dan has "
-    part2 = "made this "
-    part3 = "into a complete "
-    part4 = "sentence "
-    whole = part1.concat(part2,part3,part4);
+    var part1 = "dan has "
+    var part2 = "made this "
+    var part3 = "into a complete "
+    var part4 = "sentence "
+    var whole = part1.concat(part2,part3,part4);
     document.getElementById("concat").innerHTML = whole;
 }
 
 //my version without the use of the concat()
 function concatt() {
-    part1 = "dan has "
-    part2 = "made this "
-    part3 = "into a complete "
-    part4 = "sentence without concat() "
-    whole = part1 + part2 + part3 + part4;
+    var part1 = "dan has "
+    var part2 = "made this "
+    var part3 = "into a complete "
+    var part4 = "sentence without concat() "
+    var whole = part1 + part2 + part3 + part4;
     document.getElementById("concatt").innerHTML = whole;
 }
 
 // you can choose a section of the string to show 
 function slice_method() {
-    sentence = "i can choose any part of this string to display";
-    section = sentence.slice(17,36);
+    var sentence = "i can choose any part of this string to display";
+    var section = sentence.slice(17,36);
     document.getElementById("slice").innerHTML = section;
 }
 
 
 // Successfully write and execute the toUpperCase() method.
 function uppercase() {
-    a = "Hello World!";
-    b = a.toUpperCase();
+    var  a = "Hello World!";
+    var  b = a.toUpperCase();
     document.getElementById("upper").innerHTML = b;
   }
 
@@ -38,8 +38,8 @@ function uppercase() {
 // Successfully write and execute the search() method
 //this locates the position of a word in a string
 function search() {
-    a = "my name is dan"; 
-    b = a.search("dan");
+    var   a = "my name is dan"; 
+    var  b = a.search("dan");
     document.getElementById("search").innerHTML = b;
   }
 
@@ -51,14 +51,14 @@ function search() {
 
 //only apply while in a function
 function method1() {
-     var x = 555;
+    var x = 555;
     document.getElementById("numberstring").innerHTML = x.toString();
 }
 
 // toPrecision() Method 
 //display only 5 of the numbers in the string
 function pre_method() {
-    x = 13456.35765476;
+    var  x = 13456.35765476;
     document.getElementById("precision").innerHTML = 
     x.toPrecision(5);
 }
@@ -67,8 +67,8 @@ function pre_method() {
 // Successfully write and execute the toFixed() method.
 //choose how many number to display after the decimal point 
 function tofixed() {
-    num = 5.56789;
-    a= num.toFixed(30);
+    var  num = 5.56789;
+    var  a = num.toFixed(30);
     document.getElementById("tofixed").innerHTML = a;
   }
 
@@ -76,8 +76,8 @@ function tofixed() {
 
 // Successfully write and execute the valueOf() method.
 function valueof() {
-   a = "hi!";
-   b = a.valueOf();
+    var   a = "hi!";
+    var  b = a.valueOf();
   document.getElementById("valueof").innerHTML = a;
 }
 
@@ -94,27 +94,27 @@ function valueof() {
 // Write functions methods: concat(), slice(), toString(), toPrecision()
 
 function concaternate() {
-    a = "this is ";
-    b = "so much fun ";
-    c = a.concat(b)
+    var  a = "this is ";
+    var  b = "so much fun ";
+    var  c = a.concat(b)
     document.getElementById("concaternate").innerHTML = c;
 }// we are adding to 2 variables together
 
 
 function slice_1() {
-    a = "hello im dan"
-    b = a.slice(5,12)
+    var   a = "hello im dan"
+    var   b = a.slice(5,12)
     document.getElementById("slice_1").innerHTML = b
 }// i am choosing what part of the string to display 
 
 function tostring_1() {
-    a = (123);
+    var   a = (123);
     document.getElementById("tostring_1").innerHTML = a.toString()
 }// i am telling the function to display the number as a string
 
 function precition_1() {
-    a = (345623456.6547);
-    b = a.toPrecision(15)
+    var    a = (345623456.6547);
+    var    b = a.toPrecision(15)
     document.getElementById("precition_1").innerHTML = b;
 }// i am choosing how many number after the decimal to display
 
