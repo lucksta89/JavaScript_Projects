@@ -187,15 +187,76 @@ function number1() {          //declaring a function and a name
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+var x = 10;
+function add_numbers_1(){
+    document.write(20 + x +"<br>");
+} 
+function add_numbers_2() {
+    document.write(x + 100);
+}
+
+add_numbers_1();
+add_numbers_2();
+
+
+
+function add_numbers_3() {
+    var y = 10;
+    console.log(15 + y);
+}
+
+
+function add_numbers_4() {
+    var y = 10;
+    console.log(y + 100);
+}
+add_numbers_3();
+add_numbers_4();
+
+
+
+function add_up() {
+    var add = 10;       // my try // set ADD to 10 and then multiplied it by 50 // local variable
+    document.write("<br>"+ add * 50);
+}
+add_up();
+
+
+
+div = 50;
+function divide() {           //global variable
+    document.write("<br>" + 500 / div);
+}
+divide();
 
 
 
 
 
 
+//////////////////    if statements ///////////////////////////////
 
 
 
+
+if (1 < 2 ){
+    document.write(" the left number is smaller than the number on the right ")
+}
+
+function get_date() {
+    if (new Date().getHours() < 18) {       //if the time is < 18pm dispaly message other wise display nothing
+        document.getElementById("greeting").innerHTML = "how are you today";
+    }
+}
+
+
+function clock() {
+    if (new Date().getHours() > 10 ) {
+        document.getElementById("time").innerHTML = " its past 10" ;
+    }
+}
 
 
 
