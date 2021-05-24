@@ -112,7 +112,7 @@ function error() {
     user_2 = " matt <br>";
     user_3 = " john ";
    
-    console.log("error"); 
+    console.log("error); 
     // error to fix i would use consol log and check the error in this case im missing the "
     all = user + user_1 + user_2 + user_3;
     all = all.fontcolor("green");
