@@ -14,6 +14,8 @@
     <input id="seconds" value="">
     <button onclick="countdown()">click here!</button>
     <p id="timer"></p>
+
+
     
 
 
@@ -55,43 +57,55 @@
 
 
 
+<!-- Assignment Submission # 9 --> <!-- Assignment Submission # 9 --> 
+<!-- Assignment Submission # 9 --> <!-- Assignment Submission # 9 --> 
+<!-- Assignment Submission # 9 --> <!-- Assignment Submission # 9 --> 
+<!-- Assignment Submission # 9 --> <!-- Assignment Submission # 9 --> 
+<!-- Assignment Submission # 9 --> <!-- Assignment Submission # 9 --> 
+
+<p>Set your alarm for?</p>   <!-- paragraph -->
+<input id="sec" value="">    <!-- id name and value of what ever is entered -->
+<button onclick="count()">click here!</button> <!--function name with a event handler -->
+<p id="timer1"></p> <!-- id name relates back to the function -->
 
 
 
 
 
+<div class="container">    <!-- made a class to contain all the elements -->
+    <h2> Welcome to Dan's slideshow! </h2> <!-- header  -->
+    <div class="pic">     <!-- picture class with a header attached -->
+        <img src="/cool-cat1.jfif" width="100%">
+        <h3>First Picture</h3>
+    </div>
+
+    <div class="pic">
+        <img src="/cool-cat2.jfif" width="100%">
+        <h3>Second Picture</h3>
+    </div>
+
+    <div class="pic">
+        <img src="/cool-cat3.gif" width="100%">
+        <h3>Third Picture</h3>
+    </div>
+
+    <!-- class for css + function for js so it can tell 
+        these button to go back and forward  -->
+    <a class="prev" onclick="control(-1)">&#10094;</a> 
+    <a class="next" onclick="control(1)">&#10095;</a>
+    </div>
+
+    <br> <!-- break line -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- class for css and added an event handler for the functions
+     -->
+    <div style="text-align:center">
+      <span class="square" onclick="current(1)"></span> 
+      <span class="square" onclick="current(2)"></span> 
+      <span class="square" onclick="current(3)"></span> 
+    </div>
+</div>
 
 
 </body>

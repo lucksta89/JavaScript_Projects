@@ -7,6 +7,10 @@ h1{
     font-family: cursive;
 }
 
+
+
+
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -104,6 +108,117 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+
+
+
+
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+/* Assignment Submission # 9 */ 
+
+
+
+
+
+
+h2{border-radius: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:lightgrey;
+    width:50%;                      /* added styling to header h2 */
+    text-align: center;
+    margin-left: 25%;
+    box-shadow: black 5px 5px 5px 5px;
+    font-family: cursive;
+}
+
+h3{
+    
+    text-align: center;
+    text-transform: uppercase;    /* added styling to header h3 */
+    text-decoration: underline;
+}
+
+.pic {
+    display: none         /* display no pictures until js says so */
+}
+
+.container {
+  max-width: 50%;
+  position: relative;    /* contains all the elements */
+  margin: auto;          /* width of only 50% as i don't want it to large */
+}
+
+.next, .back { 
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;           /* styling for arrow buttons  */
+  padding: 16px;
+  margin-top: -20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  user-select: none;
+
+}
+
+
+.back:hover, .forward:hover {
+  background-color: grey;      /* styling for hover buttons when hovered over */
+}
+
+.square {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-image: url(/smiley.jpg); /* i made the square have a back ground image */
+  background-size: contain;            /* displayed them inline and have a transition effect with .2 sec */
+  background-repeat: no-repeat;
+  border-radius: 10%;  /* applied a round border */
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.active, .square:hover {
+  background-color:grey;   /* made the background of the smiley buttons grey */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
