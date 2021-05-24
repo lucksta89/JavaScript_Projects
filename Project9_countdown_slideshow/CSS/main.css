@@ -190,7 +190,7 @@ h3{
   height: 30px;
   width: 30px;
   margin: 0 2px;
-  background-image: url(smiley.jpg); /* i made the square have a back ground image */
+  background-image: url(/smiley.jpg); /* i made the square have a back ground image */
   background-size: contain;            /* displayed them inline and have a transition effect with .2 sec */
   background-repeat: no-repeat;
   border-radius: 10%;  /* applied a round border */
