@@ -111,7 +111,125 @@ function slides(a) { //naming function (current) with a para as (a)
 }
 
 
-// i don't fully understand which is why i have put ????? in the comments
+
+
+
+
+
+
+////////   extra's ////////
+
+function game() {
+  var game = document.getElementById("game").value;
+  if (game >= 18){
+      var gaming = "your old enough to buy this game"
+}
+  else{
+    gaming = "your not old enough to buy this game"
+  }
+  document.getElementById("game_1").innerHTML = gaming
+}
+
+
+
+
+
+
+function music() {
+  var album = document.getElementById("music").value;
+  if (album <= 17){
+  var album_age = "you cant buy this album";
+  }
+  else{
+   album_age = "you can buy this album";
+}
+document.getElementById("albums").innerHTML = album_age;
+
+}
+
+function food() {
+  var food = document.getElementById("food").value;
+  if (food <= 12){
+    var amount = "this will be £5"
+  }
+  else if(food > 12){
+    amount = "this will be £10";
+  } 
+  document.getElementById("foodamount").innerHTML = amount;
+}
+
+
+
+function drinks() {
+  var drink = document.getElementById("drinks").value
+  if (drink == "yes"){
+   var result = "ok we have many on offer"
+  }
+else if(drink == "no"){
+  result = "ok"
+}
+document.getElementById("drink").innerHTML = result;
+}
+
+
+
+
+
+function crime() {
+  var a = document.getElementById("crime").value;
+  if(a == "yes"){
+    var crimes = "you killed an old lady"
+  }
+  else if(a == "no"){
+    crimes = "maybe next time"
+  }
+  document.getElementById("crimes").innerHTML = crimes
+}
+
+
+
+function book() {
+  var a = document.getElementById("book").value;
+  if(a == "yes"){
+    var answer = "ok we have a great selection of books";
+  }
+  else if(a == "no"){
+    answer = "ok maybe next time!"
+  }
+  document.getElementById("books").innerHTML = answer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
