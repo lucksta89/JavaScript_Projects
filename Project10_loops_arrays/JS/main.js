@@ -35,10 +35,10 @@ function foode() {
 ////////userrr
 
 function userrr() {
-    var person1 = "user is called dan" + "<br><img src='/user1.png'>";
-    var person2 = " user is called matt " + "<br><img src='/user2.jfif'>";
-    var person3 = " user 3 called john " + "<br><img src='/user3.jfif'>";
-    var person4 = " user 4 called margaret" + "<br><img src='/user4.png'>";
+    var person1 = "player Dan" + "<br><img src='/user1.png'>";
+    var person2 = " player Matt " + "<br><img src='/user2.jfif'>";
+    var person3 = " player john " + "<br><img src='/user3.jfif'>";
+    var person4 = " player Margaret" + "<br><img src='/user4.png'>";
 
     var a = document.getElementById("people").value;
     if(a == "p1"){
