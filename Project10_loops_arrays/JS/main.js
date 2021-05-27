@@ -1,15 +1,70 @@
-
 //my game function 
 function game() {
      var games = document.getElementById("game").value;
      if(games == "yes"){
         var game1  = "ok we have a selection of games"
     }
-    else if (games = "no"){
+    else if (games == "no"){
         game1 = " ok next time then! "
     } 
     document.getElementById("gaming").innerHTML = game1
 }
+
+
+// food function with a list assigned to a variable
+function foode() {
+    var food12 = " oranges ";
+    var food13 = "apples ";
+    var food14 = "pears ";
+    var foods123 = food12 + food13 + food14; 
+
+    var A = document.getElementById("foodie").value;
+    if(A == "yes"){
+        var answer ="here is our list "+ (foods123);
+    }
+    else if(A == "no"){
+        var answer = "ok next time maybe! ";
+    }
+    document.getElementById("foodies").innerHTML = answer;
+}
+
+
+
+
+
+////////userrr
+
+function userrr() {
+    var person1 = "user is called dan" + "<br><img src='/user1.png'>";
+    var person2 = " user is called matt " + "<br><img src='/user2.jfif'>";
+    var person3 = " user 3 called john " + "<br><img src='/user3.jfif'>";
+    var person4 = " user 4 called margaret" + "<br><img src='/user4.png'>";
+
+    var a = document.getElementById("people").value;
+    if(a == "p1"){
+        b = " you choose " + person1;
+    }
+    a = document.getElementById("people").value;
+    if(a == "p2"){
+        b = " you choose " + person2;
+     }
+     a = document.getElementById("people").value;
+    if(a == "p3"){
+        b = " you choose " + person3;
+    }
+     a = document.getElementById("people").value;
+    if(a == "p4"){
+        b = " you choose " + person4;
+    }
+document.getElementById("players").innerHTML = b; 
+}
+
+
+
+
+
+
+
 
 
 
@@ -145,7 +200,6 @@ document.getElementById("teles").innerHTML = his_tele;
 ////////////////////   Assignment Submission # 10
 ////////////////////   Assignment Submission # 10
 
-
 // Write a function that uses a while loop
 function new_loop() {  //naming function
     var a = "" // (a) will now be used to place a new number 
@@ -156,6 +210,13 @@ function new_loop() {  //naming function
     document.getElementById("new_loop").innerHTML = a
 }
 
+
+
+
+
+
+
+
 // Write a function that uses a for loop
 function new_loop_1() {  //naming a function
     a = "";           // (a) will now be used to place a new number 
@@ -164,7 +225,6 @@ function new_loop_1() {  //naming a function
         a += step++  // step add a number and place it in (a)
         document.getElementById("step").innerHTML = a;
     }
-
 
 // Write a function that use an array
 function array() {        //naming a function
@@ -176,7 +236,6 @@ function array() {        //naming a function
     drink[4] = " Apple-juice ";
     document.getElementById("drinks").innerHTML = drink[0] + drink[4];
 }
-
 
 // Create an object using the “let” keyword
 let vehicle = {  //giving a variable properties and giving them values
