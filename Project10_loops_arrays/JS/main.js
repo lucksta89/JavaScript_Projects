@@ -35,10 +35,10 @@ function foode() {
 ////////userrr
 
 function userrr() {
-    var person1 = "player Dan" + "<br><img src='/user1.png'>";
-    var person2 = " player Matt " + "<br><img src='/user2.jfif'>";
-    var person3 = " player john " + "<br><img src='/user3.jfif'>";
-    var person4 = " player Margaret" + "<br><img src='/user4.png'>";
+    var person1 = "player Dan" + "<br><img src='user1.png'>";
+    var person2 = " player Matt " + "<br><img src='user2.jfif'>";
+    var person3 = " player john " + "<br><img src='user3.jfif'>";
+    var person4 = " player Margaret" + "<br><img src='user4.png'>";
 
     var a = document.getElementById("people").value;
     if(a == "p1"){
@@ -209,13 +209,6 @@ function new_loop() {  //naming function
     }
     document.getElementById("new_loop").innerHTML = a
 }
-
-
-
-
-
-
-
 
 // Write a function that uses a for loop
 function new_loop_1() {  //naming a function
