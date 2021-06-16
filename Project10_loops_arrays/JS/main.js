@@ -32,35 +32,109 @@ function foode() {
 
 
 
-////////userrr
+//////// My sons game ////////////
+//////// My sons game ////////////
+//////// My sons game ////////////
 
 function userrr() {
-    var person1 = "player Dan" + "<br><img src='user1.png'>";
-    var person2 = " player Matt " + "<br><img src='user2.jfif'>";
-    var person3 = " player john " + "<br><img src='user3.jfif'>";
-    var person4 = " player Margaret" + "<br><img src='user4.png'>";
+    var person1 = "Player Ryley" + "<br><img src='ryley.gif'>";
+    var person2 = "Player Dan" + "<br><img src='user1.png'>";
+    var person3 = " Player Matt " + "<br><img src='user2.jfif'>";
+    var person4 = " Player john " + "<br><img src='user3.jfif'>";
+    var person5 = " Player Margaret" + "<br><img src='user4.png'>";
+
+ person1 = person1.fontcolor("red")
+ person2 = person2.fontcolor("red")
+ person3 = person3.fontcolor("red")
+ person4 = person4.fontcolor("red")
+ person5 = person5.fontcolor("red")
+
 
     var a = document.getElementById("people").value;
-    if(a == "p1"){
+    if(a == "P1"){
         b = " you choose " + person1;
     }
     a = document.getElementById("people").value;
-    if(a == "p2"){
+    if(a == "P2"){
         b = " you choose " + person2;
      }
      a = document.getElementById("people").value;
-    if(a == "p3"){
+    if(a == "P3"){
         b = " you choose " + person3;
     }
      a = document.getElementById("people").value;
-    if(a == "p4"){
+    if(a == "P4"){
         b = " you choose " + person4;
     }
-document.getElementById("players").innerHTML = b; 
+     a = document.getElementById("people").value;
+    if(a == "P5"){
+        b = " you choose " + person5;
+    }
+document.getElementById("players").innerHTML = b;
 }
 
+function userr() {
+    var a = document.getElementById("game1").value;
+    if (a == "4"){
+        b = '<iframe width="300" height="200" src="https://www.youtube.com/embed/zvkmLnS4sAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+         +"<br>well done that's CORRECT! :)"; 
+     }
+    if(a = ""){
+        b = "try again";
+}
+    document.getElementById("game_1").innerHTML = b;
 
+    var c = document.getElementById("game2").value;
+    if (c == "6"){
+        d = '<iframe width="300" height="200" src="https://www.youtube.com/embed/O38Rr2Tgack?list=PL0742AA9A177449BD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+        + "<br>well done that's CORRECT! :)";
+     }
+    if(c = ""){
+        d = "try again";
+}
+    document.getElementById("game_2").innerHTML = d;
 
+    var e = document.getElementById("game3").value;
+    if (e == "8"){
+        f ='<iframe width="300" height="200" src="https://www.youtube.com/embed/M2H34kAyuCM?list=PL0742AA9A177449BD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+         + "<br>well done that's CORRECT! :)"; 
+     }
+    if(e = ""){
+        f = "try again";
+}
+    document.getElementById("game_3").innerHTML = f;
+
+    var g = document.getElementById("game4").value;
+    if (g == "10"){
+        h ='<iframe width="300" height="200" src="https://www.youtube.com/embed/AHaLDeeV454?list=PL0742AA9A177449BD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+         + "<br>well done that's CORRECT! :)"; 
+     }
+    if(g = ""){
+        h = "try again";
+}
+    document.getElementById("game_4").innerHTML = h;
+
+    var i = document.getElementById("game5").value;
+    if (i == "25"){
+        var j ='<iframe width="300" height="200" src="https://www.youtube.com/embed/rzqh-DBmtVw?list=PL0742AA9A177449BD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+         + "<br> well done that's CORRECT! :)";  
+    }
+    if (i = ""){
+        j = "try again";
+    }
+    document.getElementById("game_5").innerHTML = j;
+
+    var word = document.getElementById("game6").value;
+    if (word == "I love games"){
+        var right ='<iframe width="300" height="200" src="https://www.youtube.com/embed/OE2NPmqZ9nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+         + "<br> well done that's CORRECT! :)";  
+    }
+    if (word = ""){
+        right = "try again";
+    }
+    document.getElementById("game_6").innerHTML = right;
+
+}
 
 
 
@@ -183,7 +257,7 @@ function tv() {
     if (tele == "yes"){
     var his_tele = "ok we have many on offer"
     }
-        if(tele == ""){
+       else if(tele == ""){
             his_tele = "ok!"
            }    else if (tele == "no"){
          his_tele = "ok next maybe next time!"
@@ -249,6 +323,21 @@ document.getElementById("vehicle").innerHTML = vehicle.detail();
 
 
 
+
+
+
+
+
+function r_game() {
+    var a = document.getElementById("r-game").value;
+    if (a == "9"){
+        var b = "well done that's CORRECT! :)" 
+    }
+    else if (a == ""){
+        b = "try again!"
+    }
+    document.getElementById("r-game1").innerHTML = b;
+}
 
 
 
