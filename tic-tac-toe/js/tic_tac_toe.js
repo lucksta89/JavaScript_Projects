@@ -30,7 +30,6 @@ function myFunction() {
 let activePlayer = 'X';
 //this array stores an array moves, we can use this to determine win conditions.
 let selectedSquares = [];
-
 //this function is for placing an X or an O  in a square
 function placeXOrO(squareNumber){
     //this condition ensures a square hasnt been selected already.
