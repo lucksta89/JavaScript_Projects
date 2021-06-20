@@ -1,3 +1,32 @@
+function game() {
+   var  a = document.getElementById("game").value;
+   if (a == "yes"){
+       var b ="great we have many on offer"
+   }
+   else if (a == "no"){
+       b = " cya!"
+   }
+   document.getElementById("result").innerHTML = b;
+}
+
+function array() {
+    var c = [];
+        c[0] = "dan" ;
+        c[1] = "dan" ;
+        c[2] = "dan" ;
+        document.getElementById("arraylist").innerHTML = c[0] + c[1] + c[2];
+}
+////////////////////////////////////////////////////////////////////////////////
+/////    test above ^   //////////////
+
+
+
+
+
+
+
+
+
 
 //creates an object to keep track of of values
 const Calculator = {
@@ -63,9 +92,9 @@ function Handle_Operator(Next_Operator){
     }else if (operator) {//check if an operator already exists
         const Value_Now = First_Operand || 0;
         // if an operator exists, property lookup is performed for the operator 
-        //in the perform_calculation object and the function that matches the
+        //in the Perform_Calculation object and the function that matches the
         //operator is executed
-        let result = Perform_Calculation[operator](Value_Now,Value_of_Input);
+        let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         // here we add a fixed amount of numbers after the decimal
         result = Number(result).toFixed(9)
         //this will remove any trailing 0's
@@ -106,7 +135,7 @@ function Update_Display(){
 Update_Display();
 
 //this section monitors button clicks
-const keys = document.querySelector('.calculator_keys');
+const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
     //the target variable is an object that represents the element
     //that was clicked
