@@ -249,8 +249,8 @@ setTimeout(function(){ clear();resetGame();} ,1000);
 function resetGame(){
     //this for loop iterates through each html square element
     for (let i = 0; i < 9; i++){
-        //this var gets html element of i
-        let.square = document.getElementById(string(i));
+        //this var gets html element of i.
+        let square = document.getElementById(String(i));
         //this removes our elements backgroundImage
         square.style.backgroundImage = '';
     }
