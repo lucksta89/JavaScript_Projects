@@ -127,7 +127,7 @@ function Calculator_Reset(){
 //this function updates the screen with the contents of Display_Value
 function Update_Display(){
     const display = document.querySelector('.calculator-screen');
-    display_Value = Calculator.Display_Value;
+    display.value = Calculator.Display_Value;
 } 
 
 
@@ -158,7 +158,7 @@ keys.addEventListener('click', (event) => {
     if (target.classList.contains('all-clear')){
         Calculator_Reset();
         Update_Display();
-        return
+        return;
     }
     Input_Digit(target.value)
     Update_Display()
