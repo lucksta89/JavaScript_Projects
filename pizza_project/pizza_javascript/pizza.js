@@ -113,6 +113,18 @@ function getVeg(goingTotal,text1) {
 
 
 
+function test() {
+    drink = document.getElementById("games").value;
+     if (drink <= 18 ){
+         a = " you cant purchase alcohol!"
+     }
+     else if (drink > 18){
+         a = "you can buy alcohol with your meal!"
+         a += "<ol><li>beer</li><li>spirits</li></ol>"
+     }
+     document.getElementById("answer").innerHTML = a
+}
+
 
 
 

@@ -73,11 +73,13 @@ div{
 
 
 .menu-bottom{
-    margin-left:60px;
     color:red;
 }
 
-
+.drink{
+    position: absolute;
+    margin-left:10%;
+}
 
 
 
