@@ -54,7 +54,9 @@
         box-shadow: black 5px 5px 5px;
     }
 
-
+#totalPrice{
+    margin-bottom: auto;
+}
 
 body{
     background-color: #333;

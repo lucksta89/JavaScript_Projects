@@ -9,7 +9,7 @@ function getReceipt() {
     for (var i = 0; i < sizeArray.length;i++){
     if (sizeArray[i].checked){
         var selectedSize = sizeArray[i].value;
-        text1 = text1 + selectedSize+"<br>";
+        text1 = text1 + selectedSize ;
     }
 }
     if(selectedSize === "Personal Pizza"){
@@ -37,11 +37,13 @@ function getReceipt() {
     }
 
     runningTotal = sizeTotal;
-    console.log(selectedSize+"  = £"+sizeTotal+".00");
-    console.log("size text1: "+text1);
-    console.log("subtotal: £"+ runningTotal+".00");
+    console.log(selectedSize + "  = £" + sizeTotal+".00");
+    console.log("size text1: " + text1);
+    console.log("subtotal: £" + runningTotal + ".00");
+    text1 = text1 + " £" + sizeTotal + "<br>";
+
     //these variables will get passed on to each function
-    document.getElementById("totalPrice").innerHTML= "<h3>Total: <strong>£" + runningTotal +".00"+"</strong></h3>";
+    document.getElementById("totalPrice").innerHTML= "<h3>Total: <strong>£" + runningTotal +".00" + "</strong></h3>";
        getTopping(runningTotal,text1);
 };   
 
@@ -55,7 +57,7 @@ function getTopping(runningTotal,text1) {
         if (toppingArray[j].checked){
             selectedTopping.push(toppingArray[j].value);
             console.log("selected topping item: ("+toppingArray[j].value+")");
-            text1 = text1+toppingArray[j].value+"<br>";
+            text1 = text1+toppingArray[j].value + "  £1" + "<br>";
         }
     }
     var toppingCount = selectedTopping.length;
@@ -73,7 +75,7 @@ function getTopping(runningTotal,text1) {
         if (VegArray[V].checked){
             selectedVeg.push(VegArray[V].value);
             console.log("selected Veg item: ("+ VegArray[V].value+")");
-            text1 = text1 + VegArray[V].value+"<br>";
+            text1 = text1 + VegArray[V].value +"  £1" + "<br>";
         }
     }
     var VegCount = selectedVeg.length;
@@ -94,7 +96,6 @@ function getTopping(runningTotal,text1) {
     document.getElementById("totalPrice").innerHTML= "<h3>Total: <strong>£" + runningTotal +".00"+"</strong></h3>";
 
 };
-
 
 
 

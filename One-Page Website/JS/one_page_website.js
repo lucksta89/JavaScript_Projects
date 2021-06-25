@@ -7,7 +7,7 @@ function user() {
     else if (user === "no"){
         create = "never mind!";
      }    
-     document.getElementById("resultt").innerHTML = create.innerHTML;
+     document.getElementById("result").innerHTML = create.innerHTML;
 }
 
 
@@ -24,7 +24,7 @@ function myFunction() {
        g = "your old enough, WELCOME " + a;
    }
     document.getElementById("name1").innerHTML = "your name is: " + a+ "<br>" +"your age is: " + b+"<br>" 
-    + "your height is: " + c +"<br>" + "your weight is: " + d + "<br>" + g
+    + "your height is: " + c +"<br>" + "your weight is: " + d + "<br>" + g;
   }
 
 
