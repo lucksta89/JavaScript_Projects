@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>One Page Website</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Daniel luck">
+	<link rel="stylesheet" type="text/css" href="css/one_page_website.css">
+	<script src="JS/one_page_website.js" defer></script>
+</head>
+<body>
+
+	<!-- bookmarks -->
+	<nav>
+		<a href="#video"id="link">Video</a>
+		<a href="#form"id="link">Contact-Form</a>
+	</nav>
+	<!-- end bookmarks -->
+		
+	<!-- header with paragraph -->
+	<h1> Lucky Holiday's </h1>
+	<p>Welcome to the holiday page take a look at the hotels shown below. </p>
+	<!-- end header with paragraph -->
+	
+	<!-- pictures of hotels -->
+	<section>
+		<img src="images/hotelpic.jpg" alt="hotel pic" width="300px" height="300px">
+		<img src="images/hotelpic2.jpg" alt="hotel pic" width="300px" height="300px">
+		<div id="sub-header"> Checkout this great hotel only £2000 for 2 weeks book now!,
+			Or if you would like to contact us fill out the form below! </div>
+	</section>
+	<!-- end pictures of hotels -->
+	
+	<!-- video of hotels in spain -->
+		<div id="video">
+		<iframe width="1000" height="444" src="https://www.youtube.com/embed/upHEPYhzVa0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	<!-- end of videos -->
+		
+	<!-- contact form -->
+	<div id="form">
+		<form action="" method="post"><br>
+		First name:<input type="text" name="first_name" placeholder="Enter Here!"><br>
+		Last name:<input type="text" name="last_name" placeholder="Enter Here!"><br>
+		your email:<input type="email" name="email" placeholder="Enter Here!"><br>
+		<label for="country">Country:</label>
+		<select>
+				<option value="uk">UK</option>
+				<option value="europe">Europe</option>
+				<option value="america">America</option>
+				<option value="australia">Australia</option>
+		</select>
+		<br>
+		<strong>Message:</strong><br><textarea rows="5" cols="30" name="message" placeholder="Type your message here!"></textarea><br>
+		<input type="submit" name="submit" value="submit"><br>
+	</form>
+	</div>
+	
+	<!-- end of form -->
+	
+
+
+
+
+<p>would you like to create a new user? YES/NO</p>
+<input id="user" value="">
+<button onclick="user()">click here!</button>
+<p id="resultt"></p>
+
+
+<footer>&copy space station 2021 </footer>
+		
+
+
+
+
+<p id="peeps"></p>
+<p id="click"></p>
+
+<div class="hidden">
+<div id="card">
+	<h1>User1</h1>
+	<hr>
+	<img src="/images/user.png" width="250px" height="250px">
+	<hr>
+	First Name: <input type="text" id="name" ><br>
+	<hr>
+	Age:<input type="text" id="age"><br>
+	<hr>
+	Your height: <input type="text" id="height"><br>
+	<hr>
+	Your weight:<input type="text" id="weight"><br>
+	<hr>
+	<button onclick="myFunction()">Try it</button>
+	<p id="name1"></p>
+
+</div>
+</div>
+
+
+</body>
+</html>
+	
