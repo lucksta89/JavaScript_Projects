@@ -65,10 +65,7 @@
 <input id="user" value="">
 <button onclick="user()">click here!</button>
 <p id="result"></p>
-
-
-<footer>&copy space station 2021 </footer>
-		
+	
 
 
 
@@ -95,6 +92,126 @@
 
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="images/cool-cat1.jfif" style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="images/cool-cat1.jfif" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="images/cool-cat2.jfif" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="images/cool-cat3.gif" style="width:50%">
+    </div>
+    
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="images/holidaypic1.jpg" style="width:50%">
+    </div>
+    
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="images/holidaypic2.jpg" style="width:50%">
+    </div>
+    
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="images/holidaypic3.jpg" style="width:50%">
+    </div>
+    
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="images/holidaypic4.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="images/holidaypic5.jpg" style="width:50%">
+    </div>
+
+    
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/cool-cat1.jfif" style="width:50%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/cool-cat2.jfif" style="width:50%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/cool-cat3.gif" style="width:50%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/holidaypic1.jpg" style="width:50%" onclick="currentSlide(4)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/holidaypic2.jpg" style="width:50%" onclick="currentSlide(5)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/holidaypic3.jpg" style="width:50%" onclick="currentSlide(6)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/holidaypic4.jpg" style="width:50%" onclick="currentSlide(7)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/holidaypic5.jpg" style="width:50%" onclick="currentSlide(8)" alt="Mountains and fjords">
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer>&copy space station 2021 </footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
