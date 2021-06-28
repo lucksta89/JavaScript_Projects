@@ -6,13 +6,17 @@
 	<meta name="author" content="Daniel luck">
 	<link rel="stylesheet" type="text/css" href="css/one_page_website.css">
 	<script src="JS/one_page_website.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 <body>
 
-	<!-- bookmarks -->
+	<!-- bookmarks
+  Challenge #34
+Utilize HTML bookmarks to link to various sections of a webpage. -->
 	<nav>
 		<a href="#video"id="link">Video</a>
-		<a href="#form"id="link">Contact-Form</a>
+		<a href="#lightBox"id="link">lightBox</a>
 	</nav>
 	<!-- end bookmarks -->
 		
@@ -36,12 +40,23 @@
 		</div>
 	<!-- end of videos -->
 		
-	<!-- contact form -->
-	<div id="form">
-		<form action="" method="post"><br>
+
+
+
+ <!-- Challenge #30
+      Challenge #31 
+  Create a form that includes a phone number field. 
+ Create a popup contact form.-->
+ <div id="lightBox">
+  <button class="open-button" onclick="openForm()">Open Form</button>
+  <div class="form-popup" id="Form">
+		<form name="Form" action="one_page_website.html" method="post" onsubmit="return validateForm()"
+    class="form-container">
+
 		First name:<input type="text" name="first_name" placeholder="Enter Here!"><br>
 		Last name:<input type="text" name="last_name" placeholder="Enter Here!"><br>
-		your email:<input type="email" name="email" placeholder="Enter Here!"><br>
+		Email:<input type="text" name="email" placeholder="Enter Here!"><br>
+		Phone number:<input type="text" name="phone" placeholder="Enter Here!"><br>
 		<label for="country">Country:</label>
 		<select>
 				<option value="uk">UK</option>
@@ -50,18 +65,25 @@
 				<option value="australia">Australia</option>
 		</select>
 		<br>
-		<strong>Message:</strong><br><textarea rows="5" cols="30" name="message" placeholder="Type your message here!"></textarea><br>
-		<input type="submit" name="submit" value="submit"><br>
-	</form>
+		<strong>Message:</strong><br>
+    <textarea rows="5" cols="30" name="message" placeholder="Type your message here!"></textarea><br>
+
+		<input type="submit" name="submit" value="submit"class="btn primary">
+
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
 	</div>
-	
+</div>
 	<!-- end of form -->
 	
 
 
 
 
-<p>would you like to create a new user? YES/NO</p>
+  
+<!-- Challenge #28
+Open one of your HTML files, and set the font size using the vw unit. -->
+<p style="font-size: 5vw">Would you like to create a new user? YES/NO</p>
 <input id="user" value="">
 <button onclick="user()">click here!</button>
 <p id="result"></p>
@@ -102,7 +124,7 @@
 
 
 
-<h2 style="text-align:center">Lightbox</h2>
+<h2 style="text-align:center">LightBox</h2>
 
 <div class="row">
   <div class="column">
@@ -116,46 +138,47 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 8</div>
-      <img src="images/cool-cat1.jfif" style="width:50%">
+      <img src="images/cool-cat1.jfif" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 8</div>
-      <img src="images/cool-cat2.jfif" style="width:50%">
+      <img src="images/cool-cat2.jfif" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 8</div>
-      <img src="images/cool-cat3.gif" style="width:50%">
+      <img src="images/cool-cat3.gif" style="width:100%">
     </div>
     
 
     <div class="mySlides">
       <div class="numbertext">4 / 8</div>
-      <img src="images/holidaypic1.jpg" style="width:50%">
+      <img src="images/holidaypic1.jpg" style="width:100%">
     </div>
     
 
     <div class="mySlides">
       <div class="numbertext">5 / 8</div>
-      <img src="images/holidaypic2.jpg" style="width:50%">
+      <img src="images/holidaypic2.jpg" style="width:100%">
     </div>
     
 
     <div class="mySlides">
       <div class="numbertext">6 / 8</div>
-      <img src="images/holidaypic3.jpg" style="width:50%">
+      <img src="images/holidaypic3.jpg" style="width:100%">
     </div>
     
 
     <div class="mySlides">
       <div class="numbertext">7 / 8</div>
-      <img src="images/holidaypic4.jpg" style="width:50%">
+      <img src="images/holidaypic4.jpg" style="width:100%">
     </div>
+
 
     <div class="mySlides">
       <div class="numbertext">8 / 8</div>
-      <img src="images/holidaypic5.jpg" style="width:50%">
+      <img src="images/holidaypic5.jpg" style="width:100%">
     </div>
 
     
@@ -163,56 +186,69 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
+<p></p>
 
     <div class="column">
-      <img class="demo cursor" src="images/cool-cat1.jfif" style="width:50%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      <img class="demo cursor" src="images/cool-cat1.jfif" style="width:50%" onclick="currentSlide(1)" alt="fd">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/cool-cat2.jfif" style="width:50%" onclick="currentSlide(2)" alt="Snow">
+      <img class="demo cursor" src="images/cool-cat2.jfif" style="width:50%" onclick="currentSlide(2)" alt="s">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/cool-cat3.gif" style="width:50%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="images/cool-cat3.gif" style="width:50%" onclick="currentSlide(3)" alt="n">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/holidaypic1.jpg" style="width:50%" onclick="currentSlide(4)" alt="Mountains and fjords">
+      <img class="demo cursor" src="images/holidaypic1.jpg" style="width:50%" onclick="currentSlide(4)" alt="f">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/holidaypic2.jpg" style="width:50%" onclick="currentSlide(5)" alt="Mountains and fjords">
+      <img class="demo cursor" src="images/holidaypic2.jpg" style="width:50%" onclick="currentSlide(5)" alt="h">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/holidaypic3.jpg" style="width:50%" onclick="currentSlide(6)" alt="Mountains and fjords">
+      <img class="demo cursor" src="images/holidaypic3.jpg" style="width:50%" onclick="currentSlide(6)" alt="hj">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/holidaypic4.jpg" style="width:50%" onclick="currentSlide(7)" alt="Mountains and fjords">
+      <img class="demo cursor" src="images/holidaypic4.jpg" style="width:50%" onclick="currentSlide(7)" alt="f">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/holidaypic5.jpg" style="width:50%" onclick="currentSlide(8)" alt="Mountains and fjords">
+      <img class="demo cursor" src="images/holidaypic5.jpg" style="width:50%" onclick="currentSlide(8)" alt="b">
     </div>
   </div>
+</div>
+
+<!-- Challenge # 32 -->
+<div class="dans-logo">
+  <h3>Catch me if you can!</h3>
 </div>
 
 
 
 
+
+
+
+
+
+<!--Challenge #35
+Create an automatic slide show. -->
+
+<div class="slide">
+  <div>
+    <img src="images/holidaypic1.jpg" width="50%"height="200px">
+  </div>
+  <div>
+    <img src="images/holidaypic2.jpg"width="50%"height="200px">
+  </div>
+  <div>
+    <img src="images/holidaypic3.jpg"width="50%"height="200px">
+  </div>
+  <div>
+    <img src="images/holidaypic4.jpg"width="50%" height="200px">
+  </div>
+</div>
+
+
+
 <footer>&copy space station 2021 </footer>
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

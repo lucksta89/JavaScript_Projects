@@ -1,3 +1,60 @@
+//Challenge #29
+//Open one of your HTML files, and create an effect that makes 
+//it so the elements fade in as the page loads
+ $(document).ready(function(){   
+  $( "h1" ).fadeOut( 1500 )   
+  $( "h1" ).fadeIn( 1500 );
+  $( "h1" ).fadeOut( 1500 )   
+  $( "h1" ).fadeIn( 1500 );
+  });
+
+
+
+
+
+
+//Challenge #30
+//Utilize JavaScript Form Validation to create an alert if someone attempts to submit the form with an empty field(s).
+  function validateForm() {
+    let form = document.forms["Form"]["first_name"].value;
+    if (form == "") {
+      alert("All fields must be filled out");
+      return false;
+    }
+  }
+
+
+
+//Challenge #31 
+  function closeForm() {
+    document.getElementById("Form").style.display = "none";
+  }
+
+  function openForm() {
+    document.getElementById("Form").style.display = "block";
+  }
+  
+
+
+
+//Challenge #35
+  $(".slide > div:gt(0)").hide();
+
+  setInterval(function() {
+    $('.slide > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('.slide');
+  }, 3000);
+
+
+
+
+
+
+
 
 function user() {
     var user = document.getElementById("user").value;
@@ -26,6 +83,8 @@ function myFunction() {
     document.getElementById("name1").innerHTML = "your name is: " + a+ "<br>" +"your age is: " + b+"<br>" 
     + "your height is: " + c +"<br>" + "your weight is: " + d + "<br>" + g;
   }
+
+
 
 
 
@@ -73,7 +132,8 @@ function myFunction() {
 
  }
  
- 
+
+
 
 
 
