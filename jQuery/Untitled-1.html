@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 24</title>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+
+
+
+<p> Do you like coding?</p>
+<input id="user" value="">
+<button onclick="user()">Click here</button>
+<p id="answer"></p>
+
+
+
+
+<p id="boo"></p>
+
+
+<script>
+$(document).ready(function(){   // creating a function and using the .ready function made by Jquery library 
+    $("html").append(  // asking to write the following in the html doc
+        "<body>\
+            <div id='container'>\
+              <div id='inner'>\
+                <h1> Basic jQuery</h1>\
+                    <p id='1'>paragraph 1</p>\
+                    <p id='2'>paragraph 2</p>\
+                    <p id='3'>paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    $("#container").css({"text-align":"center"})   // adding css
+    $("p").css({"color":"red"})
+    $("#container").css({"color":"blue"})
+    $("#1").css({"font-size":"0.7em"})
+    $("#2").css({"font-size":"0.8em"})
+    $("#3").css({"font-size":"0.9em"})
+
+    $("#3").click(function(){   // using the click function to hide the h1 element 
+        $ ('h1').hide();
+    })
+
+
+$( "p" ).click(function() {         // using the click function to display a string in the html doc
+   var a =( "You clicked a paragraph!" );
+   document.getElementById("boo").innerHTML = a
+});
+
+$( "p" ).hide( 1000 );  // using hide function to hide and then show the (p) element within a set time
+$( "p" ).show( 1500 );
+$( "p" ).hide( 1000 );
+$( "p" ).show( 1500 );
+$( "p" ).hide( 1000 );
+$( "p" ).show( 1500 );
+
+$( "p" ).fadeOut( 1500 )  // using fadeout function to hide and then show the (p) element within a set time; 
+$( "p" ).fadeIn( 1500 );
+});
+
+</script>
+
+</body>
+</html>
