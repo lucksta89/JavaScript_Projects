@@ -1,7 +1,6 @@
 # <center>JavaScript_Projects</center>
 
-
-<b>PROJECTS</b>
+<h1>PROJECTS</h1>
 <hr>
 
 have a look at some of the prjects i made using JS, CSS and HTML
@@ -10,6 +9,8 @@ have a look at some of the prjects i made using JS, CSS and HTML
   <li><i>Tic-Tac-Toe</i></li>
   <li><i>Calculator</i></li>
 </ol>
+
+
 
 
 
