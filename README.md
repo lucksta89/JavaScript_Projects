@@ -1,6 +1,6 @@
 # <center>JavaScript_Projects</center>
 
-<h1>PROJECTS</h1>
+<h1 color="red">PROJECTS</h1>
 <hr>
 
 have a look at some of the prjects i made using JS, CSS and HTML
