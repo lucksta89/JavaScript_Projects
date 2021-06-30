@@ -1,7 +1,7 @@
 # <center>JavaScript_Projects</center>
 
 
-PROJECTS
+<b>PROJECTS</b>
 <hr>
 
 
